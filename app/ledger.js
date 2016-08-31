@@ -468,16 +468,16 @@ var updatePublisherInfo = () => {
   syncWriter(pathName(synopsisPath), synopsis, () => {})
   publisherInfo.synopsis = synopsisNormalizer()
 
-  if (publisherInfo._internal.debugP) {
 /*
+  if (publisherInfo._internal.debugP) {
     data = []
     publisherInfo.synopsis.forEach((entry) => {
       data.push(underscore.extend(underscore.omit(entry, [ 'faviconURL' ]), { faviconURL: entry.faviconURL && '...' }))
     })
 
     console.log('\nupdatePublisherInfo: ' + JSON.stringify(data, null, 2))
- */
   }
+ */
 
   appActions.updatePublisherInfo(underscore.omit(publisherInfo, [ '_internal' ]))
 }
