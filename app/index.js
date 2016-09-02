@@ -84,7 +84,7 @@ const prefsRestartCallbacks = {}
 const prefsRestartLastValue = {}
 
 const unsafeTestMasterKey = 'c66af15fc6555ebecf7cee3a5b82c108fd3cb4b587ab0b299d28e39c79ecc708'
-
+app.commandLine.appendSwitch('proxy-server', 'socks5://127.0.0.1:9050');
 /**
  * Gets the master key for encrypting login credentials from the OS keyring.
  */
