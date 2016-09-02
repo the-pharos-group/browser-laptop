@@ -1,8 +1,12 @@
 [![Build Status](https://travis-ci.org/brave/browser-laptop.svg?branch=master)](https://travis-ci.org/brave/browser-laptop)
 
-# Brave Browser
+# Brave Browser (w/ Tor)
 
 Desktop browser for macOS, Windows, and Linux.
+
+_NOTES ON THIS FORK_
+
+Must have Tor already installed on your system and tor started as a background service (in OSX homebrew, `brew install tor`). The index.js auto-defaults to socks5:\\127.0.0.1:9050. You can change the line of code as necessary and release your own binary via `CHANNEL=dev npm run build-package`.
 
 Follow [@brave](https://twitter.com/brave) on Twitter for important news and announcements.
 
